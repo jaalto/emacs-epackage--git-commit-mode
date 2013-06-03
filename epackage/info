@@ -1,0 +1,32 @@
+Package: git-commit-mode
+Section: extensions
+License: GPL-2
+Depends: emacs (>= 23)
+Status: stable unmaintained
+Maintainer: Jari Aalto <jari.aalto@cante.net>
+Bugs:
+Upstream: Florian Ragwitz <rafl@debian.org>
+Upstream-Bugs: https://github.com/rafl/git-commit-mode/issues
+Vcs-Type: git
+Vcs-Url: git://github.com/rafl/git-commit-mode.git
+Vcs-Browser: https://github.com/rafl/git-commit-mode
+Homepage: https://github.com/rafl/git-commit-mode
+Wiki: http://www.emacswiki.org/emacs/GitCommitMode
+Commentary:
+Description: Major mode for editing git commit messages
+ This mode helps with editing git commit messages both by
+ providing commands to do common tasks, and by highlighting the
+ basic structure of and errors in git commit messages. Examples
+ of available commands:
+ .
+ git-commit-commit   - Finish editing and commit
+ git-commit-signoff  - Insert a Signed-off-by header
+ git-commit-ack      - Insert an Acked-by header
+ git-commit-review   - Insert a Reviewed-by header
+ git-commit-cc       - Insert a Cc header
+ git-commit-reported - Insert a Reported-by header
+ .
+ It also allows the use of things like ‘M-q’, You might want to integrate
+ ‘flyspell-mode’ into the ‘git-commit-mode’.
+ .
+ Note: 2013-06-03 the code hasn't been touched since 2010.
